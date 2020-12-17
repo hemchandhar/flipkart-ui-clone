@@ -1,0 +1,26 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.logo-img {
+  width: 100px;
+  height: 30px;
+}
+
+mat-toolbar {
+  background-color: #2774ef;
+}
+
+
+
+.show {
+  display: block;
+  color: white;
+  font-size: 15px;
+  padding: 0 20px;
+  line-height: 70px;
+  cursor: pointer;
+}
+.show:hover {
+  color: rgb(235, 255, 119);
+}
