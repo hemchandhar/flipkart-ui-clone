@@ -10,18 +10,50 @@
     ><img src="../../../../assets/flipkart.png" alt="" class="logo-img"
   /></span>
   <span class="example-spacer"></span>
-  <button
-    mat-icon-button
-    class="example-icon favorite-icon"
-    aria-label="Example icon-button with heart icon"
-  >
-    <mat-icon>favorite</mat-icon>
-  </button>
-  <button
-    mat-icon-button
-    class="example-icon"
-    aria-label="Example icon-button with share icon"
-  >
-    <mat-icon>shopping_cart</mat-icon>
-  </button>
+  <div class="search-area">
+    <input
+      type="search"
+      placeholder="Search for products, brands and more"
+      class="search-input"
+    />
+    <button mat-icon-button><mat-icon>search</mat-icon></button>
+  </div>
+
+  <button class="loginButton">Login</button>
+  <div class="dropdown">
+    <p class="dropbtn">More<mat-icon>arrow_drop_down</mat-icon></p>
+    <div class="dropdown-content">
+      <a href="#"
+        ><mat-icon style="color: #2774ef; margin-right: 10px">
+          notifications</mat-icon
+        >
+        Notification Preferences</a
+      >
+      <a href="#"
+        ><mat-icon style="color: #2774ef; margin-right: 10px"> store</mat-icon>
+        Sell on flipkart</a
+      >
+      <a href="#"
+        ><mat-icon style="color: #2774ef; margin-right: 10px">
+          support_agent</mat-icon
+        >
+        24x7 Customer Care</a
+      >
+      <a href="#"
+        ><mat-icon style="color: #2774ef; margin-right: 10px">
+          timeline</mat-icon
+        >
+        Advertise</a
+      >
+      <a href="#"
+        ><mat-icon style="color: #2774ef; margin-right: 10px">
+          get_app</mat-icon
+        >
+        Download App</a
+      >
+    </div>
+  </div>
+  <div class="cart">
+    <mat-icon>shopping_cart</mat-icon><p>Cart</p>
+  </div>
 </mat-toolbar>

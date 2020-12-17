@@ -1,17 +1,54 @@
 .example-spacer {
-  flex: 1 1 auto;
+  flex: 0 0 auto;
 }
 
 .logo-img {
   width: 100px;
   height: 30px;
+  margin-top: 6px;
 }
 
 mat-toolbar {
   background-color: #2774ef;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.search-area {
+  width: 40%;
+  height: 60%;
+  background: #fff;
+  margin: 0 50px 0 20px;
+  display: flex;
+  align-items: center;
+}
 
+.search-area button {
+  height: 100%;
+}
+.search-area .search-input {
+  border: none;
+  width: 90%;
+  height: 100%;
+  color: #000;
+  padding-left: 15px;
+}
+.search-area button mat-icon {
+  color: #2774ef;
+}
+
+.loginButton {
+  width: 120px;
+  height: 32px;
+  color: #2774ef;
+  border: none;
+  background: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+}
 
 .show {
   display: block;
@@ -23,4 +60,61 @@ mat-toolbar {
 }
 .show:hover {
   color: rgb(235, 255, 119);
+}
+
+.dropbtn {
+  color: white;
+  padding: 16px;
+  margin-left: 15px;
+  margin-top: 12px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(94, 89, 89);
+  padding: 10px 16px;
+  font-size: 15px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.cart{
+  margin-top: 12px;
+  margin-left: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.cart p{
+  font-size: 15px;
+}
+.cart mat-icon{
+  padding-top: -1px;
+  font-size: 18px;
 }
