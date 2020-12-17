@@ -12,10 +12,86 @@ export class DropdownComponent implements OnInit {
   enteredButton = false;
   isMatMenuOpen = false;
   isMatMenu2Open = false;
-  prevButtonTrigger;
+  prevButtonTrigger: any;
 
   constructor(private ren: Renderer2) {
-    this.modulesList = [];
+    this.modulesList = [
+      {
+        label: 'User',
+        children: [
+          {
+            label: 'User 1',
+            children: [
+              {
+                label: 'User 5',
+              },
+              {
+                label: 'User 6',
+              },
+              {
+                label: 'User 7',
+              },
+            ],
+          },
+          {
+            label: 'User 2',
+            children: [
+              {
+                label: 'User 8',
+              },
+              {
+                label: 'User 9',
+              },
+              {
+                label: 'User 10',
+              },
+            ],
+          },
+          {
+            label: 'User 3',
+          },
+          {
+            label: 'User 4',
+          },
+        ],
+      },
+      {
+        label: 'Management',
+        children: [
+          {
+            label: 'Management 1',
+            children: [
+              {
+                label: 'Management 2',
+              },
+              {
+                label: 'Management 3',
+              },
+              {
+                label: 'Management 4',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        label: 'Admin',
+        children: [
+          {
+            label: 'Admin 1',
+          },
+          {
+            label: 'Admin 2',
+          },
+          {
+            label: 'Admin 3',
+          },
+          {
+            label: 'Admin 4',
+          },
+        ],
+      },
+    ];
   }
 
   menuenter() {
@@ -25,7 +101,7 @@ export class DropdownComponent implements OnInit {
     }
   }
 
-  menuLeave(trigger, button) {
+  menuLeave(trigger: any, button: any) {
     setTimeout(() => {
       if (!this.isMatMenu2Open && !this.enteredButton) {
         this.isMatMenuOpen = false;
@@ -48,7 +124,7 @@ export class DropdownComponent implements OnInit {
     this.isMatMenu2Open = true;
   }
 
-  menu2Leave(trigger1, trigger2, button) {
+  menu2Leave(trigger1: any, trigger2: any, button: any) {
     setTimeout(() => {
       if (this.isMatMenu2Open) {
         trigger1.closeMenu();
@@ -70,7 +146,7 @@ export class DropdownComponent implements OnInit {
     }, 100);
   }
 
-  buttonEnter(trigger) {
+  buttonEnter(trigger: any) {
     setTimeout(() => {
       if (this.prevButtonTrigger && this.prevButtonTrigger != trigger) {
         this.prevButtonTrigger.closeMenu();
@@ -105,7 +181,7 @@ export class DropdownComponent implements OnInit {
     });
   }
 
-  buttonLeave(trigger, button) {
+  buttonLeave(trigger: any, button: any) {
     setTimeout(() => {
       if (this.enteredButton && !this.isMatMenuOpen) {
         trigger.closeMenu();
