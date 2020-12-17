@@ -8,9 +8,10 @@ import { MaterialModule } from 'src/app/theme/material.module';
 import { SecNavComponent } from './components/sec-nav/sec-nav.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { DealsComponent } from './components/deals/deals.component';
 
 @NgModule({
-  declarations: [HomeComponent, MainNavComponent, SecNavComponent, CarouselComponent],
+  declarations: [HomeComponent, MainNavComponent, SecNavComponent, CarouselComponent, DealsComponent],
   imports: [CommonModule, HomePageRoutingModule, MaterialModule,SharedModule],
 })
 export class HomePageModule {}
