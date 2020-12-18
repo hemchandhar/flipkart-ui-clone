@@ -11,7 +11,13 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { DealsComponent } from './components/deals/deals.component';
 
 @NgModule({
-  declarations: [HomeComponent, MainNavComponent, SecNavComponent, CarouselComponent, DealsComponent],
-  imports: [CommonModule, HomePageRoutingModule, MaterialModule,SharedModule],
+  declarations: [
+    HomeComponent,
+    MainNavComponent,
+    SecNavComponent,
+    CarouselComponent,
+    DealsComponent,
+  ],
+  imports: [CommonModule, HomePageRoutingModule, MaterialModule, SharedModule],
 })
 export class HomePageModule {}
