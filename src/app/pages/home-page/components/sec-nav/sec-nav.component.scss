@@ -1,11 +1,9 @@
-.list {
-  display: flex;
-}
-
-mat-toolbar{
+mat-toolbar {
   height: 45px;
   background: #fff;
-  border-bottom:0.5px solid rgb(214, 213, 213);
+  border-bottom: 0.5px solid rgb(214, 213, 213);
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .dropbtn {
