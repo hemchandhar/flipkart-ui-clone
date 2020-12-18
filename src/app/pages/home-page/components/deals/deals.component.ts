@@ -41,22 +41,22 @@ export class DealsComponent implements OnInit {
       description: 'Best Discounts on Brands!',
     },
     {
-      imgPath: '../../../../../assets/f6.jpeg',
-      name: 'Libas,Vishudh & more',
-      price: '60-70% Off',
+      imgPath: '../../../../../assets/f6.jpg',
+      name: 'Puma,Allen Solly & more',
+      price: 'From Rs.299 + Extra10%Off',
       description: 'Best Discounts on Brands!',
     },
     {
       imgPath: '../../../../../assets/f7.jpeg',
-      name: 'Libas,Vishudh & more',
-      price: '60-70% Off',
-      description: 'Best Discounts on Brands!',
+      name: 'Peter England, US Polo, Levis',
+      price: 'From Rs.499',
+      description: 'Shrits,Trousers,Blazers',
     },
     {
       imgPath: '../../../../../assets/f8.jpeg',
-      name: 'Libas,Vishudh & more',
-      price: '60-70% Off',
-      description: 'Best Discounts on Brands!',
+      name: 'Levis,Allen Solly,US Polo',
+      price: '55-80% Off',
+      description: 'Shirts,Trousers,Blazers',
     },
   ];
 }
