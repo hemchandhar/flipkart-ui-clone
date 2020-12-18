@@ -1,0 +1,30 @@
+.top-card {
+  margin: 20px 10px;
+  background: #fff;
+  box-shadow: -2px -8px 41px 0px rgb(214, 212, 214);
+}
+
+.top-card mat-card-title{
+    font-size: 22px;
+    margin: 18px;
+}
+
+mat-grid-tile{
+    margin: 30px;
+    cursor: pointer;
+}
+.example-card{
+    background: rgb(255, 255, 255);
+    width: 250px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.example-card img{
+  width: 100%;
+  height: 150px;
+}

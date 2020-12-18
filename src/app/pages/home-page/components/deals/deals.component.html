@@ -1,3 +1,15 @@
-<div class="deals-Box">
-    
-</div>
+<mat-card class="top-card">
+  <mat-card-title style="color: #000">Featured Brands</mat-card-title>
+  <mat-grid-list cols="4" rowHeight="0.5:0.5">
+    <mat-grid-tile *ngFor="let item of dealsList">
+      <mat-card class="example-card">
+        <img mat-card-image src="{{ item.imgPath }}" />
+        <mat-card-content>
+          <p style="color: #000">{{ item.name }}</p>
+          <p style="color: green">{{ item.price }}</p>
+          <p style="color: grey">{{ item.description }}</p>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</mat-card>
